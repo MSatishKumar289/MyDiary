@@ -6,10 +6,19 @@ import FormInput from "../components/FormInput";
 
 export default function LoginScreen(){
     return (
-        <div className="text-center relative h-full">
-            <FormInput label={"Email"} inputPlaceHolder={'john@domain.com'} type={"text"}/>
-            <FormInput label={"Password"} inputPlaceHolder={'*****'} type={"password"}/>
-            <FormInput label={"Re-Enter Password"} inputPlaceHolder={'*****'} type={"password"}/>
+        <div className="text-center relative h-full grid grid-col-[3fr 1fr] items-center">
+            <section className="flex flex-col gap-8">
+                <FormInput label={"Email"} inputPlaceHolder={'john@domain.com'} type={"text"}/>
+                <FormInput label={"Password"} inputPlaceHolder={'*****'} type={"password"}/>
+                <FormInput label={"Re-Enter Password"} inputPlaceHolder={'*****'} type={"password"}/>
+            </section>
+            <section className="flex flex-col justify-end ">
+                <AppButton
+                    buttonClassName={`h-[50px] text-white w-3/4 rounded font-bold m-auto`}
+                    bgColor={COLORS.appHardColor}>
+                    Next
+                </AppButton>
+            </section>
         </div>
     )
 }

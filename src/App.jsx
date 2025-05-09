@@ -1,5 +1,5 @@
 import './App.css'
-// import LandingScreen from './screens/LandingScreen'
+import LandingScreen from './screens/LandingScreen'
 import LoginScreen from './screens/LoginScreen'
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
   return (
     <div className='h-full'>
       <LoginScreen/>
+      {/* <LandingScreen/> */}
     </div>
   )
 }
