@@ -1,8 +1,16 @@
+@import "tailwindcss";
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: 720px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  font-family: "Quicksand", sans-serif;
+  height: 100vh;
+  color: #301927;
+}
+
+.top100_Per{
+  top: 100%;
 }
 
 
