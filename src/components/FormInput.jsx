@@ -10,7 +10,7 @@ export default function FormInput({label, inputPlaceHolder, type}){
                 placeholder={inputPlaceHolder}
                 bgColor={COLORS.appLightColor} 
                 type={type}
-                inputClassName={`h-[40px] pv-4 w-1/2 indent-[15px] rounded text-[13px] text-[${COLORS.appTextColor}]`}/>
+                inputClassName={`h-[40px] pv-4 w-3/4 indent-[15px] rounded text-[13px] text-[${COLORS.appTextColor}]`}/>
         </div>
     )
 }
