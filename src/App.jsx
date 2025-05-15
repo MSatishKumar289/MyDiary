@@ -1,6 +1,7 @@
 import './App.css'
 import LandingScreen from './screens/LandingScreen'
 import LoginScreen from './screens/LoginScreen'
+import MyDayScreen from './screens/MyDayScreen'
 import PersonalInfoScreen from './screens/PersonalInfoScreen'
 import RegisterScreen from './screens/RegisterScreen'
 
@@ -11,7 +12,8 @@ function App() {
       {/* <LoginScreen/> */}
       {/* <LandingScreen/> */}
       {/* <RegisterScreen/> */}
-      <PersonalInfoScreen/>
+      {/* <PersonalInfoScreen/> */}
+      <MyDayScreen/>
     </div>
   )
 }
