@@ -13,8 +13,8 @@ function App() {
       {/* <LoginScreen/> */}
       {/* <LandingScreen/> */}
       {/* <RegisterScreen/> */}
-      {/* <PersonalInfoScreen/> */}
-      <MyDayScreen/>
+      <PersonalInfoScreen/>
+      {/* <MyDayScreen/> */}
       {/* <MyDayPreviewScreen/> */}
     </div>
   )

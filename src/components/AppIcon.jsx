@@ -25,7 +25,7 @@ export default function AppIcon({imageName, size_W="40px", size_H="40px", label,
 console.log(gapInBtwLine)
   return (
     <div onClick={onClickIcon}
-        className={`cursor-pointer flex flex-col justify-center items-center w-[${container_W}] mb-[${gapInBtwLine}px]`}>
+        className={`cursor-pointer flex flex-col justify-center items-center mb-[${gapInBtwLine}px]`} style={{width: container_W}}>
         {/* Below image icons for top icons */}
         {imageName == "joyfull" && <img style={{width: size_W, height: size_H}} src={joyful_ic}/>}
         {imageName == "sleep" && <img style={{width: size_W, height: size_H}} src={sleep_ic}/>}
