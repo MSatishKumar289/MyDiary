@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import AppButton from "../components/AppButton";
 import { COLORS } from "../utils/color";
-import AppInput from "../components/AppInput";
 import FormInput from "../components/FormInput";
 
 import DatePicker from "react-datepicker";
 import 'react-datepicker/dist/react-datepicker.css';
+
+import female_ic from "../assets/female_ic.png";
+import male_ic from "../assets/male_ic.png";
+import others_ic from "../assets/others_ic.png";
+
 
 export default function PersonalInfoScreen(){
 
@@ -17,18 +21,18 @@ export default function PersonalInfoScreen(){
                 <FormInput label={"What is your name?"} inputPlaceHolder={'john@domain.com'} type={"text"}/>
                 <div className="flex flex-col justify-center items-center">
                     <label className="text-lg">What is your gender?</label>
-                    <div className="flex justify-around gap-5 w-full pt-2 pl-6 pr-6">
-                        <div className="w-1/3 border h-[120px] rounded flex flex-col justify-center items-center">
-                            <div>😇</div>
-                            <div className="text-xl">Male</div>
+                    <div className="flex justify-around gap-5 w-full pt-2 pl-2 pr-2">
+                        <div className="w-1/3 gap-1 border h-[80px] rounded flex flex-col justify-center items-center">
+                            <img src={male_ic} width={25}/>
+                            <div className="text-md">Male</div>
                         </div>
-                        <div className="w-1/3 border h-[120px] rounded flex flex-col justify-center items-center">
-                            <div>😇</div>
-                            <div className="text-xl">Female</div>
+                        <div className="w-1/3 gap-1 border h-[80px] rounded flex flex-col justify-center items-center">
+                            <img src={female_ic} width={25}/>
+                            <div className="text-md">Female</div>
                         </div>
-                        <div className="w-1/3 border h-[120px] rounded flex flex-col justify-center items-center">
-                            <div>😇</div>
-                            <div className="text-xl">Others</div>
+                        <div className="w-1/3 gap-1 border h-[80px] rounded flex flex-col justify-center items-center">
+                            <img src={others_ic} width={25}/>
+                            <div className="text-md">Others</div>
                         </div>
                     </div>
                 </div>

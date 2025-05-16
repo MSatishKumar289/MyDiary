@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function AppButton({children, buttonClassName, bgColor}){
+export default function AppButton({children, buttonClassName, bgColor, onClick}){
     return (
-        <button className={buttonClassName} style={{backgroundColor: bgColor}}>
+        <button className={buttonClassName} style={{backgroundColor: bgColor}} onClick={onClick}>
             {children}
         </button>
     )
