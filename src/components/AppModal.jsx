@@ -7,7 +7,7 @@ export default function AppModal({children, onClose}){
     return createPortal(
     <div className='modal-overlay'  onClick={onClose}>
         <div className='modal-content' onClick={(e) => e.stopPropagation()}>
-            <button className='absolute right-3 top-3 cursor-pointer' onClick={onClose}>
+            <button className='absolute right-5 top-5 cursor-pointer' onClick={onClose}>
                 <img src={close_black_ic} width={13}/>
             </button>
             {children}
