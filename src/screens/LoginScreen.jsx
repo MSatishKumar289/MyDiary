@@ -4,7 +4,7 @@ import AppButton from "../components/AppButton";
 import FormInput from "../components/FormInput";
 import { COLORS } from "../utils/color";
 
-import { registerUser } from "../services/apiAuth";
+import { loginUser, registerUser } from "../services/apiAuth";
 
 const passwordCheck = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -25,12 +25,13 @@ export default function LoginScreen(){
         if(!emailRegex.test(email)){
             setError(prev => ({password_e: "" , email_e: "Please check your email Id"}))
         }
-        else if(!passwordCheck.test(password)){
-            setError(prev => ({password_e: "", password_e: "Password must be at least 8 characters long and include a letter, a number, and a special character"}));
+        else if(!true){ //passwordCheck.test(password)
+            setError(prev => ({email_e: "", password_e: "Password must be at least 8 characters long and include a letter, a number, and a special character"}));
         }
         else{
-            setError(prev => ({password_e: "", password_e: ""}));
-            const userCreds =  await registerUser(email, password);
+            setError(prev => ({email_e: "", password_e: ""}));
+            const userCreds =  await loginUser(email, password);
+            console.log(userCreds.user.email);
         }
     }
 
